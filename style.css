@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body{
+    background-color: darkgrey;
+    color:black;
+    font-family: 'Raleway', serif;
+    padding: 0;
+    margin: 5%;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform:  translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.paras {
+    display: flex;
+}
+
+.paras:nth-child(2){
+    transition-delay: 100ms;
+}
+.paras:nth-child(3){
+    transition-delay: 100ms;
+}
